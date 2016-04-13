@@ -12,7 +12,8 @@ sudo cp storage-schemas.conf /etc/carbon/storage-schemas.conf
 
 sudo service carbon-cache start
 sudo apt-get install nginx
-sudo cp server.conf nano /etc/nginx/sites-enabled/server.conf
+sudo rm /etc/nginx/sites-enabled/default
+sudo cp server.conf /etc/nginx/sites-enabled/server.conf
 
 sudo apt-get install uwsgi uwsgi-plugin-python
 
